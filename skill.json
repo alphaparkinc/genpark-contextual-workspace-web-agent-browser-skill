@@ -1,0 +1,38 @@
+{
+  "name": "genpark-contextual-workspace-web-agent-browser-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Contextual web browser workspace manager orchestrating isolated multi-space tabs, custom live CSS/JS boosts, and AI sidebar synthesis.",
+  "author": "genpark",
+  "category": "browser-productivity",
+  "tags": [
+    "browser-workspace",
+    "arc-browser",
+    "tab-management",
+    "web-boosts",
+    "workspace-spaces"
+  ],
+  "inputs": {
+    "active_workspace_space": {
+      "type": "string"
+    },
+    "target_task": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "browser_space_id": {
+      "type": "string"
+    },
+    "space_name": {
+      "type": "string"
+    },
+    "tab_memory_reduction_pct": {
+      "type": "number"
+    },
+    "contextual_ai_sidebar_page_synthesized": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
